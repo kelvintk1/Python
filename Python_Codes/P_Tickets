@@ -1,0 +1,48 @@
+print("Welcome to the Rollercoaster!")
+height = input("Kindly input your height(cm):\n")
+
+NprizeK = 10
+NprizeT = 20
+NprizeA = 30
+NprizeO = 40
+Pprize = 5
+TprizeK = NprizeK + Pprize
+TprizeT = NprizeT + Pprize
+TprizeA = NprizeA + Pprize
+TprizeO = NprizeO + Pprize
+
+if int(height) >= 120:
+    print("Your height is okay for the Rollercoaster.\n")
+    age = int(input("What is your age?\n"))
+    if age <= 12:
+        photo = input("Would you like to take a photo?\n").lower()
+        if photo == "yes":
+            print(f"You would have to pay {TprizeK}\n")
+        else:
+            print(f"You have to pay {NprizeK}")
+    elif age <= 18:
+        photo = input("Would you like to take a photo?\n").lower()
+        if photo == "yes":
+            print(f"You would have to pay {TprizeT}\n")
+        else:        
+         print(f"You have to pay {NprizeT}")
+    elif age <= 30:
+        photo = input("Would you like to take a photo?\n").lower()
+        if photo == "yes":
+            print(f"You would have to pay {TprizeA}\n")
+        else:
+         print(f"You have to pay {NprizeA}")
+    elif age >30 and age <= 55:
+       print("Don't woryy, you can have a free ride. \n")
+    else:
+        photo = input("Would you like to take a photo?\n").lower()
+        if photo == "yes":
+            print(f"You would have to pay {TprizeO}\n")
+        else:
+         print(f"You have to pay {NprizeO} ")  
+else:
+   print("Sorry, your height is not convenient for the Rollercoaster.\n")
+       
+
+           
+           

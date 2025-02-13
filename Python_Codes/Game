@@ -1,0 +1,34 @@
+print("Welcome to The Navigation Game! \n")
+print("My name is Kelvin...\n I have been selected among the men in our tribe to go get a hidden  treasure in the Treasure Island.\n")
+name = input("What is your name?\n")
+print(f"Nice to meet you, {name}.")
+print("I learnt you're a pirate and you are an expect at navigating your way through to find anything. \n")
+print("Unfortunately, I'aint too familiar with the path but thank goodness I've found you. \n")
+proceed = input("Would you mind taking me to the Treasure Island, please? (yes) / (no)\n").lower()
+
+if proceed == "yes":
+    print("Note: I heard a rumor about the paths ahead that there are some places with explosives. \n So we have to be careful about our path and directions. \n")
+    input("Type 'Okay'\n").lower()
+    print("Hurray! It's adventure time. \n")
+    side = input("We are in the middle of two paths now.\n Which side should we go? (left) or (right)\n").lower()
+    if side == "left":
+        print("Road clear, let's go...\n")
+        print("The path you chose led us to the shore of the sea.\n There's a Boat at the shore.\n")
+        sea = input("Shall we swim (swim) or use the Boat to sail to the Treasure Island (Boat)?\n").lower()
+        if sea == "boat":
+            print("Alright, we are in the boat now. Let's sail to the Treasure Island. \n")
+            print("We have finally made it to the Treasure Island.\n But wait a second...\n ")
+        else:
+            print("Sorry, you've been drawn in the sea.\n GAME OVER!")
+    else:
+        print("Wrong way, there is an explosive here.\n GAME OVER!")
+else:
+    print("Come on! Don't be a coward. Please I really need your help.")
+
+import Spotmark
+
+print(Spotmark)
+
+                
+
+

@@ -1,0 +1,85 @@
+print("Welcome to the python pizza deliveries!\n")
+small = 15
+medium = 20
+large = 25
+
+pepper_S = 3
+pepper_M = 6
+pepper_L = 9
+
+extra_cheese = 2
+
+size = input("What pizza size do you want?\n")
+if size == "small":
+    add_pepperoni = input("Do you wants pepperoni?\n")
+    if add_pepperoni == "yes":
+        s_price = small + pepper_S
+        cheese = input("Do you wants extra cheese?\n")
+        if cheese == "yes":
+            p_cheese = s_price + extra_cheese
+            print(f"You have to pay {p_cheese}")
+    elif add_pepperoni == "no":
+        small
+        cheese = input("Do you wants extra cheese?\n")
+        if cheese == "yes":
+            p_cheese = small + extra_cheese
+            print(f"You have to pay {p_cheese}")
+    if add_pepperoni == "yes":
+        s_price = small + pepper_S
+        if cheese == "no":
+            s_price = small + pepper_S
+            print(f"You have to pay {s_price}")
+    elif add_pepperoni == "no":
+        small 
+        if cheese == "no":
+            print(f"You have to pay {small}")
+elif size == "medium":
+    add_pepperoni = input("Do you wants pepperoni?\n")
+    if add_pepperoni == "yes":
+        s_price = medium + pepper_M
+        cheese = input("Do you wants extra cheese?\n")
+        if cheese == "yes":
+            p_cheese = s_price + extra_cheese
+            print(f"You have to pay {p_cheese}")
+    elif add_pepperoni == "no":
+        medium
+        cheese = input("Do you wants extra cheese?\n")
+        if cheese == "yes":
+            p_cheese = medium + extra_cheese
+            print(f"You have to pay {p_cheese}")
+    if add_pepperoni == "yes":
+        s_price = medium + pepper_M
+        if cheese == "no":
+            s_price = medium + pepper_M
+            print(f"You have to pay {s_price}")
+    elif add_pepperoni == "no":
+        medium
+        if cheese == "no":
+            print(f"You have to pay {medium}")
+else:
+    size == "large"
+    add_pepperoni = input("Do you wants pepperoni?\n")
+    if add_pepperoni == "yes":
+        s_price = large + pepper_L
+        cheese = input("Do you wants extra cheese?\n")
+        if cheese == "yes":
+            p_cheese = s_price + extra_cheese
+            print(f"You have to pay {p_cheese}")
+    elif add_pepperoni == "no":
+        large
+        cheese = input("Do you wants extra cheese?\n")
+        if cheese == "yes":
+            p_cheese = large + extra_cheese
+            print(f"You have to pay {p_cheese}")
+    if add_pepperoni == "yes":
+        s_price = large + pepper_L
+        if cheese == "no":
+            s_price = large + pepper_L
+            print(f"You have to pay {s_price}")
+    elif add_pepperoni == "no":
+        large
+        if cheese == "no":
+            print(f"You have to pay {large}")
+
+
+
